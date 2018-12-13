@@ -1,0 +1,10 @@
+{
+  "pages":[
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "云众企业",
+    "navigationBarTextStyle":"black"
+  }
+}
