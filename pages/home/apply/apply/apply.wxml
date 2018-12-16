@@ -1,0 +1,65 @@
+<view class="page">
+  <view class="page__bd">
+    <form report-submit bindsubmit="submitApplications">
+      <view class="weui-cells">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">姓名</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="请输入姓名" name="username" type="text" maxlength="20" confirm-type="next"></input>
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">身份证号</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="请输入身份证号" name="id_no" type="idcard" maxlength="18" confirm-type="next"></input>
+          </view>
+        </view>
+        <view class="weui-cell">
+          <view class="weui-cell__bd">
+            <view class="weui-uploader">
+              <view class="weui-uploader__hd">
+                <view class="weui-uploader__title">身份证正面(国徽面)</view>
+              </view>
+              <view class="weui-uploader__bd">
+                <view class="weui-uploader__files">
+                  <view class="weui-uploader__file">
+                    <image class="weui-uploader__img" src="{{pic_id_preview}}" mode="aspectFill"></image>
+                  </view>
+                </view>
+                <view class="weui-uploader__input-box">
+                  <view class="weui-uploader__input" bindtap="chooseImage" id="pic_id"></view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="weui-cell">
+          <view class="weui-cell__bd">
+            <view class="weui-uploader">
+              <view class="weui-uploader__hd">
+                <view class="weui-uploader__title">身份证反面(人像面)</view>
+              </view>
+              <view class="weui-uploader__bd ">
+                <view class="weui-uploader__files">
+                  <view class="weui-uploader__file">
+                    <image class="weui-uploader__img" src="{{pic_id_face_preview}}" mode="aspectFill"></image>
+                  </view>
+                </view>
+                <view class="weui-uploader__input-box">
+                  <view class="weui-uploader__input" bindtap="chooseImage" id="pic_id_face"></view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="weui-btn-area">
+        <button class="weui-btn" type="primary" form-type="submit">申请入驻</button>
+      </view>
+    </form>
+  </view>
+</view>

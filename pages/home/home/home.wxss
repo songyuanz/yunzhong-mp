@@ -1,0 +1,39 @@
+.user-cells:before {
+  border-top: none;
+}
+
+.user-cells .user-cell {
+  padding: 40rpx 15px;
+}
+
+.user-avatar {
+  width: 150rpx;
+  height: 150rpx;
+  margin-right: 20rpx;
+}
+
+.user-info {
+  color: #fff;
+}
+
+.user-title, .user-name {
+  font-size: 20px;
+  margin-bottom: 20rpx;
+}
+
+.user-desc {
+  font-size: 14px;
+}
+
+.fas {
+  margin-right: 15rpx;
+}
+
+.fa-user-tie {
+  color: #008de1;
+}
+
+.fa-mobile-alt {
+  display: flex;
+  align-items: center;
+}

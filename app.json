@@ -1,11 +1,15 @@
 {
-  "pages":[
-    
+  "pages": [
+    "pages/home/home/home",
+    "pages/home/setting/setting",
+    "pages/home/apply/apply/apply",
+    "pages/signin/signin",
+    "pages/home/apply/show/show"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#008de1",
     "navigationBarTitleText": "中景云众",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "white"
   }
 }

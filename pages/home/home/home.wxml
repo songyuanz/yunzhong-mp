@@ -1,0 +1,41 @@
+<view class="page">
+  <view class="page__bd">
+    <view class="user-cells bg-default weui-cells weui-cells_after-title">
+      <view class="user-cell weui-cell weui-cell_access" bindtap="navigatePage" data-page="setting">
+        <view class="weui-cell__hd">
+          <view class="user-avatar">
+            <open-data type="userAvatarUrl"></open-data>
+          </view>
+        </view>
+        <view class="weui-cell__bd">
+          <view class="user-info" hidden="{{pageStatus != 1}}">
+            <view class="user-title">立即登录</view>
+            <view class="user-desc">登录后可享受更多特权</view>
+          </view>
+          <view class="user-info" hidden="{{pageStatus != 3}}">
+            <view class="user-name">{{userDetail.name ? userDetail.name : '请申请入驻云众平台'}}</view>
+            <view class="user-desc weui-flex">
+              <view class="fas fa-mobile-alt"></view>
+              <view class="user-telephone weui-flex__item">{{userDetail.telephone}}</view>
+            </view>
+          </view>
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </view>
+    </view>
+    <view class="weui-cells">
+      <view class="weui-cell weui-cell_access" bindtap="navigatePage" data-page="apply">
+        <view class="weui-cell__hd">
+          <view class="fas fa-user-tie"></view>
+        </view>
+        <view class="weui-cell__bd">申请入驻</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access">
+          <text hidden="{{userDetail.status != -1}}">申请审核</text>
+          <text hidden="{{userDetail.status != 0}}">正在审核</text>
+          <text hidden="{{userDetail.status != 1}}">审核通过</text>
+          <text hidden="{{userDetail.status != 2}}">审核失败</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

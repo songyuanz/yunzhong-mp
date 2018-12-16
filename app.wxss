@@ -1,0 +1,46 @@
+/* Weui  */
+@import "styles/weui.wxss";
+
+/* Font Awesome */
+@import "styles/fontawesome.wxss";
+
+/* 全局 */
+
+page {
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: #f8f8f8;
+}
+
+.text-default {
+  color: #008de1;
+}
+
+.bg-default {
+  background-color: #008de1;
+}
+
+.btn-unset {
+  padding: 0;
+  line-height: unset;
+  background-color: unset;
+}
+
+.btn-unset:after {
+  border: unset;
+  border-radius: unset;
+}
+
+.btn-unset[disabled]:not([type]) {
+  color: #808080;
+  background-color: unset;
+}
+
+.btn-captcha {
+  color: #3cc51f;
+}
+
+.weui-vcode-btn {
+  width: 200rpx;
+  text-align: center;
+}
